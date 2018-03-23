@@ -45,3 +45,10 @@ qtcreator-*
 
 # Catkin custom files
 CATKIN_IGNORE
+
+# ignore submodule
+perception_driven_ws/src/ar_track_alvar/
+perception_driven_ws/src/household_objects_database_msgs/
+perception_driven_ws/src/manipulation_msgs/
+perception_driven_ws/src/universal_robot/
+
