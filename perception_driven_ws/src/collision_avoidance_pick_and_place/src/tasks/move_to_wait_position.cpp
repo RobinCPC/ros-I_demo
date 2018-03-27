@@ -12,7 +12,7 @@
 
 void collision_avoidance_pick_and_place::PickAndPlace::move_to_wait_position()
 {
-  ROS_ERROR_STREAM("move_to_wait_position is not implemented yet.  Aborting."); exit(1);
+  //ROS_ERROR_STREAM("move_to_wait_position is not implemented yet.  Aborting."); exit(1);
 
   // task variables
   bool success; // saves the move result
@@ -24,6 +24,8 @@ void collision_avoidance_pick_and_place::PickAndPlace::move_to_wait_position()
    * - Use the "setNamedTarget" method in the "move_group" object.
    * - Look in the "cfg.WAIT_POSE_NAME" object for the name of the target.
    */
+  move_group_ptr->setNamedTarget(cfg.WAIT_POSE_NAME);
+
   /* ========  ENTER CODE HERE ======== */
 
   // set allowed planning time
@@ -36,6 +38,7 @@ void collision_avoidance_pick_and_place::PickAndPlace::move_to_wait_position()
    * - Use the "move" method in the "move_group" object and save the result
    *  in the "success" variable
    */
+  success = (move_group_ptr->move() == moveit::planning_interface::MoveItErrorCode::SUCCESS);
   /* ========  ENTER CODE HERE ======== */
   if(success)
   {

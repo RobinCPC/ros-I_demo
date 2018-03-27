@@ -52,3 +52,7 @@ perception_driven_ws/src/household_objects_database_msgs/
 perception_driven_ws/src/manipulation_msgs/
 perception_driven_ws/src/universal_robot/
 
+# ignore building directory
+devel/
+logs/
+
