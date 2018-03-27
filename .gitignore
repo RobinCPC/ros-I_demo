@@ -51,8 +51,14 @@ perception_driven_ws/src/ar_track_alvar/
 perception_driven_ws/src/household_objects_database_msgs/
 perception_driven_ws/src/manipulation_msgs/
 perception_driven_ws/src/universal_robot/
+descartes_ws/src/descartes/
+descartes_ws/src/realtime_tools/
+descartes_ws/src/ros_control/
+descartes_ws/src/universal_robot/
+descartes_ws/src/ur_modern_driver/
 
 # ignore building directory
 devel/
 logs/
+.catkin_tools/
 
